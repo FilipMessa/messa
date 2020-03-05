@@ -8,7 +8,8 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-native": "^0.61.5",
-    "react-native-web": "^0.12.2"
+    "react-native-web": "^0.12.2",
+    "messa-ui": "^0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",

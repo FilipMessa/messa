@@ -2,7 +2,6 @@
   "extends": "../../tsconfig.base.json",
   "include": ["src/**/*"],
   "compilerOptions": {
-    "baseUrl": "./",
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "allowJs": false,
@@ -11,7 +10,8 @@
     "noImplicitThis": true,
     "declaration": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "rootDir": "../../"
   },
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true,
