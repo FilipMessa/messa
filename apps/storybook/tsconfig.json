@@ -10,7 +10,8 @@
     "outDir": "dist",
     "noImplicitThis": true,
     "declaration": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true,

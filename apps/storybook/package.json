@@ -6,7 +6,9 @@
   "private": true,
   "dependencies": {
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "react-native": "^0.61.5",
+    "react-native-web": "^0.12.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -14,6 +16,7 @@
     "@storybook/addon-links": "^5.3.14",
     "@storybook/addons": "^5.3.14",
     "@storybook/react": "^5.3.14",
+    "@types/react-native": "^0.61.19",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
     "react-scripts": "^3.4.0",
