@@ -1,0 +1,11 @@
+{
+	"name": "messa",
+	"version": "0.0.1",
+	"author": "messa.filip@gmail.com",
+	"license": "MIT",
+	"private": true,
+	"workspaces": [
+		"packages/*",
+		"apps/*"
+	]
+}

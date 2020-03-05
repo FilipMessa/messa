@@ -1,0 +1,13 @@
+# https://en.wikipedia.org/wiki/.DS_Store
+.DS_STORE
+
+coverage/
+node_modules/
+
+.idea/
+.atom/
+.vscode/
+
+yarn-error.log*
+
+.env
