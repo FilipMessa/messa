@@ -4,12 +4,26 @@
   "main": "src/index.ts",
   "author": "messa.filip@gmail.com",
   "license": "MIT",
-  "dependencies": {
-    "react-native": "^0.61.5"
-  },
   "devDependencies": {
-    "@types/react": "^16.9.23",
-    "@types/react-native": "^0.61.19",
+    "@babel/core": "^7.9.6",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.18",
+    "babel-loader": "^8.1.0",
+    "fork-ts-checker-webpack-plugin": "^4.1.3",
+    "ts-loader": "^7.0.2",
     "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "@types/react": "^16.9.34",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "dependencies": {},
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   }
 }
