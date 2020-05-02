@@ -1,11 +1,6 @@
 import React from 'react';
-import { Text } from './'
+import { Text } from '.';
 
 export default { title: 'Text' };
 
-
-export const basic = () => (
-    <Text>
-      😀 😎 👍 💯
-    </Text>
-);
+export const basic = () => <Text>Test</Text>;

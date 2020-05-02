@@ -1,0 +1,5 @@
+node_modules/
+# don't lint build outputyarn eslint . --ext .js,.jsx,.ts,.tsx
+dist/
+# don't lint nyc coverage output
+coverage/
