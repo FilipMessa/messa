@@ -1,7 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 
 interface TextProps {
   children: React.ReactNode;
 }
 
-export const Text: React.FC<TextProps> = ({ children }) => <span>{children}</span>;
+const StyledText = styled.span`
+  color: red;
+`;
+
+export const Text: React.FC<TextProps> = ({ children }) => <StyledText>{children}</StyledText>;

@@ -21,7 +21,10 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/styled-components": "^5.1.0",
+    "styled-components": "^5.1.0"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
