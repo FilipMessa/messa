@@ -1,4 +1,7 @@
 import { addDecorator, configure } from '@storybook/react';
-import StylesDecorator from './styles-decorator';
+import { withInfo } from '@storybook/addon-info';
 
-addDecorator(StylesDecorator);
+import ThemeDecorator from './ThemeDecorator';
+
+addDecorator(withInfo);
+addDecorator(ThemeDecorator);

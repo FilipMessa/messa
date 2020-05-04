@@ -1,11 +1,16 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "baseUrl": "./",
     "jsx": "react",
     "lib": ["es2017"],
     "skipLibCheck": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@theme/*": ["./src/theme/*"]
+    }
   }
 }

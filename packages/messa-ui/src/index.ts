@@ -1,1 +1,1 @@
-export { Text } from './components/Text';
+export { Typography } from '@components/Typography';
