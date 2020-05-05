@@ -13,10 +13,11 @@ module.exports = {
   },
   overrides: [
     {
-      // Turn of no-default-export rule for storybook stories
+      // Turn of rules for storybook stories
       files: ['*stories.tsx'],
       rules: {
         'import/no-default-export': 'off',
+        'import/no-extraneous-dependencies': 'off',
       },
     },
   ],

@@ -10,7 +10,8 @@
     "allowSyntheticDefaultImports": true,
     "paths": {
       "@components/*": ["./src/components/*"],
-      "@theme/*": ["./src/theme/*"]
+      "@theme/*": ["./src/theme/*"],
+      "@theme": ["./src/theme/index.ts"]
     }
   }
 }

@@ -5,3 +5,8 @@ export const COLORS = {
   black: '#000',
   white: '#fff',
 };
+
+export enum FONT_WEIGHTS {
+  normal = 400,
+  bold = 700,
+}
