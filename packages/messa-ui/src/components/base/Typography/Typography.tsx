@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { color, typography, TypographyProps, ColorProps } from 'styled-system';
+import { color, typography, compose, TypographyProps, ColorProps } from 'styled-system';
 
 import { Theme, FontSize } from '@theme';
 
@@ -13,8 +13,7 @@ interface Props extends TypographyProps<Theme>, ColorProps<Theme> {
 }
 
 export const Typography = styled.span<Props>`
-  ${color}
-  ${typography}
+  ${compose(color, typography)}
 `;
 Typography.defaultProps = {
   as: 'span',
