@@ -1,26 +1,43 @@
 import * as React from 'react';
 
-import { Typography } from '@components/internal/Typography';
-import { CommonProps } from '@components/common/types';
-import { FontWeight, TextFontSize } from '@theme';
+import { FontSizeIndex } from '@theme';
 
-interface Props extends CommonProps {
-  children: React.ReactNode;
+import { Typography } from '@components/base/Typography';
+
+interface TextProps {
   as?: 'span' | 'p' | 'div';
-  fontWeight?: FontWeight;
-  fontSize?: TextFontSize;
+  bold?: boolean;
+  children: React.ReactNode;
+  color?: 'primary' | 'secondary' | 'default';
+  fontSize?: FontSizeIndex;
+  italic?: boolean;
 }
 
-export const Text: React.FC<Props> = ({ children, as, fontWeight, fontSize }: Props) => (
-  <Typography fontSize={fontSize} fontWeight={fontWeight} as={as}>
+export const Text: React.FC<TextProps> = ({
+  as,
+  bold,
+  children,
+  color,
+  fontSize,
+  italic,
+}: TextProps) => (
+  <Typography
+    as={as}
+    color={color}
+    fontSize={fontSize}
+    fontStyle={italic ? 'italic' : 'normal'}
+    fontWeight={bold ? 'bold' : 'body'}
+    lineHeight="body"
+  >
     {children}
   </Typography>
 );
 
-Text.displayName = 'Text';
-
 Text.defaultProps = {
-  as: 'span',
-  fontWeight: 'bold',
-  fontSize: 'medium',
+  bold: false,
+  color: 'default',
+  fontSize: 1,
+  italic: false,
 };
+
+Text.displayName = 'Text';
