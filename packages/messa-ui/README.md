@@ -4,5 +4,5 @@
 
 ## @TODO:
 
-- visual regression tests
+- Refactor Text API to presets
 - Documentation

@@ -22,4 +22,8 @@ module.exports = {
   // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
   timers: 'modern', // modern -> https://github.com/sinonjs/fake-timers
   verbose: true,
+  transform: {
+    '^.+\\.css$': 'jest-transform-css',
+    '\\.(jpg|jpeg|png|gif|webp|svg)$': 'jest-transform-file',
+  },
 };
