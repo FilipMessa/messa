@@ -4,4 +4,5 @@
 
 ## @TODO:
 
-- Jest and React Test library
+- visual regression tests
+- Documentation

@@ -11,7 +11,8 @@
     "paths": {
       "@components/*": ["./src/components/*"],
       "@theme/*": ["./src/theme/*"],
-      "@theme": ["./src/theme/index.ts"]
+      "@theme": ["./src/theme/index.ts"],
+      "@test-utils": ["./configs/test-utils.tsx"]
     }
   }
 }

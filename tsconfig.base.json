@@ -22,5 +22,5 @@
     /* Module Resolution Options */
     "moduleResolution": "node"
   },
-  "exclude": [".yarn/releases/*", "**/__tests__/**/*", "**/__mocks__/**/*", "**/build/**/*"]
+  "exclude": [".yarn/releases/*", "**/__mocks__/**/*", "**/build/**/*"]
 }
