@@ -4,4 +4,4 @@
 
 ## @TODO:
 
-- Create own ThemeProvider
+- Jest and React Test library

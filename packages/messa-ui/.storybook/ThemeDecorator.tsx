@@ -1,14 +1,7 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 
-import { basicTheme } from '../src/theme';
-import { Reset } from '../src/components/Reset';
+import { ThemeProvider } from '../src/components/base/ThemeProvider';
 
-const ThemeDecorator = (storyFn) => (
-  <>
-    <Reset />
-    <ThemeProvider theme={basicTheme}>{storyFn()}</ThemeProvider>
-  </>
-);
+const ThemeDecorator = (storyFn) => <ThemeProvider>{storyFn()}</ThemeProvider>;
 
 export default ThemeDecorator;
