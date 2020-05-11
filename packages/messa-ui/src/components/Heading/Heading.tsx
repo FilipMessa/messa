@@ -15,14 +15,7 @@ export const Heading: React.FC<HeadingProps> = ({
   color,
   fontSize,
 }: HeadingProps) => (
-  <Typography
-    role="heading"
-    color={color}
-    fontSize={fontSize}
-    fontWeight="heading"
-    lineHeight="heading"
-    as={as}
-  >
+  <Typography variant="heading" role="heading" color={color} fontSize={fontSize} as={as}>
     {children}
   </Typography>
 );

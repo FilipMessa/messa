@@ -16,16 +16,31 @@ export const basicTheme = {
     body: 1.5,
     heading: 1.25,
   },
-  space: [4, 8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256], // 12 possible spaces
+  space: [4, 8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256],
+  fonts: {
+    body: 'system-ui, sans-serif',
+    heading: 'Roboto',
+    monospace: 'Menlo, monospace',
+  },
+  // decisions
+  typography: {
+    heading: {
+      lineHeight: 'heading',
+      fontWeight: 'heading',
+      fontFamily: 'heading',
+      // @IDEA fontSizes: [30, 40, 50],
+    },
+  },
 };
 
 export type Theme = typeof basicTheme;
 export type ThemeProps = { theme?: Theme };
 export type ColorType = keyof Theme['colors'];
 
-// 9 possible shades of a ColorType
-export type ColorIndex = 0;
+export type ColorIndex = 3;
 
 // 12 possible spaces
 export type SpaceIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
 export type FontSizeIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+
+export type typographyPresets = 'heading';

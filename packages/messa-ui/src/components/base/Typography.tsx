@@ -1,16 +1,25 @@
 /* eslint-disable no-shadow */
 
-import styled from 'styled-components';
+import styled, { CSSObject } from 'styled-components';
 import { typography, color, compose, TypographyProps, ColorProps } from 'styled-system';
+import css, { get } from '@styled-system/css';
 
-import { Theme } from '@theme';
+import { Theme, typographyPresets } from '@theme';
 
-type StyledTextProps = TypographyProps<Theme> & ColorProps<Theme>;
+// @TODO refactor to more generic helper function (+ test)
+const preset = ({ theme, variant }: { theme: Theme; variant?: typographyPresets }) => {
+  if (!variant) return {};
+  const PRESET_NAME = 'typography';
+  return css(get(theme, `${PRESET_NAME}.${variant}`))(theme) as CSSObject;
+};
+
+type StyledTextProps = TypographyProps<Theme> & ColorProps<Theme> & { variant?: typographyPresets };
 
 export const Typography = styled.span<StyledTextProps>`
   ${compose(typography, color)}
+  ${preset}
 `;
 
 Typography.defaultProps = {
-  fontFamily: 'Roboto',
+  fontFamily: 'system-ui, sans-serif',
 };
