@@ -4,7 +4,7 @@
 
 ## @TODO:
 
-- Refactor Text API to presets
+- Storybook knobs for Text and Headings
 - Documentation
 - setup CI
 

@@ -8,6 +8,7 @@ module.exports = {
   extends: ['airbnb-typescript', 'prettier/@typescript-eslint', 'plugin:prettier/recommended'],
   rules: {
     'import/prefer-default-export': 'off',
+    'no-shadow': 'off',
     'react/prop-types': 'off',
     'import/no-default-export': 'error',
   },

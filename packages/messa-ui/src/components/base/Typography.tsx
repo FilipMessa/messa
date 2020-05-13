@@ -10,10 +10,11 @@ import { Theme, typographyPresets } from '@theme';
 const preset = ({ theme, variant }: { theme: Theme; variant?: typographyPresets }) => {
   if (!variant) return {};
   const PRESET_NAME = 'typography';
-  return css(get(theme, `${PRESET_NAME}.${variant}`))(theme) as CSSObject;
+  return css(get(theme, `${PRESET_NAME}.${variant}.base`))(theme) as CSSObject;
 };
 
-type StyledTextProps = TypographyProps<Theme> & ColorProps<Theme> & { variant?: typographyPresets };
+type StyledTextProps = TypographyProps<Theme> &
+  ColorProps<Theme> & { variant?: typographyPresets; className?: string };
 
 export const Typography = styled.span<StyledTextProps>`
   ${compose(typography, color)}

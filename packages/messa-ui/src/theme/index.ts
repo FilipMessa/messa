@@ -25,10 +25,22 @@ export const basicTheme = {
   // decisions
   typography: {
     heading: {
-      lineHeight: 'heading',
-      fontWeight: 'heading',
-      fontFamily: 'heading',
-      // @IDEA fontSizes: [30, 40, 50],
+      base: {
+        lineHeight: 'heading',
+        fontWeight: 'heading',
+        fontFamily: 'heading',
+      },
+      sizes: {
+        small: {
+          fontSize: 6,
+        },
+        medium: {
+          fontSize: 7,
+        },
+        large: {
+          fontSize: 8,
+        },
+      },
     },
   },
 };

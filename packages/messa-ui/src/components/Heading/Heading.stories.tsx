@@ -7,9 +7,9 @@ export default { title: 'Heading' };
 
 export const basic = () => {
   const as = select('as', ['h1', 'h2', 'div'], 'h2');
-  const fontSize = select('fontSize', [5, 6, 7, 8], 5);
+  const size = select('size', ['small', 'medium', 'large'], 'medium');
   return (
-    <Heading fontSize={fontSize} as={as}>
+    <Heading size={size} as={as}>
       {text('children', 'Lorem Ipsum')}
     </Heading>
   );
