@@ -11,6 +11,7 @@
 
 # WIP
 
+- TYPOGRAPHY scale for Heading
 - Image component
 - Icon component
 
@@ -19,6 +20,7 @@
 - https://superfriendlydesign.systems/articles/typography-in-design-systems/
 - https://www.designsystems.com/typography-guides/
 - https://blog.prototypr.io/10-practical-steps-to-create-a-predictable-accessible-and-harmonious-typography-system-a-case-6c85d901bedd
+- https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
 
 # ARIA
 

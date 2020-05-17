@@ -1,4 +1,3 @@
-export const LINE_HEIGHT_RATIO = 1.5; // https://www.smashingmagazine.com/2009/08/typographic-design-survey-best-practices-from-the-best-blogs/
 export const FONT_SIZE_BASE = 14;
 
 export const COLORS = {
@@ -10,3 +9,6 @@ export enum FONT_WEIGHTS {
   normal = 400,
   bold = 700,
 }
+
+export const BASE_FONT_SIZE = 14;
+export const LINE_HEIGHT_RATIO = 1.64;

@@ -1,4 +1,4 @@
-import { COLORS, FONT_WEIGHTS } from '@theme/tokens';
+import { COLORS, FONT_WEIGHTS, BASE_FONT_SIZE, LINE_HEIGHT_RATIO } from '@theme/tokens';
 
 export const basicTheme = {
   colors: {
@@ -6,20 +6,20 @@ export const basicTheme = {
     secondary: COLORS.white,
     default: COLORS.black,
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [9, BASE_FONT_SIZE, 23, 38, 62, 100, 166, 270], // BASE_FONT_SIZE compute from BASE_FONT_SIZE all https://www.modularscale.com/?14&px&1.64
   fontWeights: {
     body: FONT_WEIGHTS.normal,
     heading: FONT_WEIGHTS.bold,
     bold: FONT_WEIGHTS.bold,
   },
   lineHeights: {
-    body: 1.5,
-    heading: 1.25,
+    body: LINE_HEIGHT_RATIO,
+    heading: LINE_HEIGHT_RATIO / 1.333, // Golden ratio
   },
   space: [4, 8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256],
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: 'Roboto',
+    body: 'TT Norms Pro',
+    heading: 'TT Norms Pro',
     monospace: 'Menlo, monospace',
   },
   // decisions
@@ -53,6 +53,6 @@ export type ColorIndex = 3;
 
 // 12 possible spaces
 export type SpaceIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
-export type FontSizeIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+export type FontSizeIndex = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
 export type typographyPresets = 'heading';

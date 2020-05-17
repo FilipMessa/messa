@@ -7,7 +7,7 @@ export default { title: 'Text' };
 
 export const basic = () => {
   const as = select('as', ['p', 'span', 'div'], 'span');
-  const fontSize = select('fontSize', [0, 1, 2, 3, 4, 5, 6, 7, 8], 1);
+  const fontSize = select('fontSize', [0, 1, 2, 3, 4, 5, 6, 7], 1);
   return (
     <Text fontSize={fontSize} as={as}>
       {text('children', 'Lorem Ipsum')}
