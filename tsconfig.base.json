@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "esnext",
     "module": "commonjs",
     "lib": ["dom", "es2017", "esnext"],
     "declaration": true,
@@ -9,6 +9,7 @@
     "emitDeclarationOnly": true,
     "isolatedModules": true,
 
+    "alwaysStrict": true,
     "strict": true,
 
     /* Additional Checks */
@@ -22,5 +23,5 @@
     /* Module Resolution Options */
     "moduleResolution": "node"
   },
-  "exclude": [".yarn/releases/*", "**/__mocks__/**/*", "**/build/**/*"]
+  "exclude": [".yarn/releases/*", "**/__mocks__/**/*", "**/build/**/*", "node_modules"]
 }

@@ -11,14 +11,30 @@ module.exports = {
     'no-shadow': 'off',
     'react/prop-types': 'off',
     'import/no-default-export': 'error',
+    'react/jsx-one-expression-per-line': 'off',
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        components: ['Link'],
+        specialLink: ['hrefLeft', 'hrefRight'],
+        aspects: ['invalidHref', 'preferButton'],
+      },
+    ],
   },
   overrides: [
     {
-      // Turn of rules for storybook stories
+      // Turn off rules for storybook stories
       files: ['*stories.tsx'],
       rules: {
         'import/no-default-export': 'off',
         'import/no-extraneous-dependencies': 'off',
+      },
+    },
+    {
+      // Turn off rules for nextjs pages - allow expor default for pages
+      files: ['**/*/pages/*.tsx'],
+      rules: {
+        'import/no-default-export': 'off',
       },
     },
   ],
