@@ -18,6 +18,7 @@ module.exports = {
     },
   ],
   webpackFinal: async (config) => {
+    config.devtool = 'inline-source-map';
     config.resolve.plugins = [
       // enable usage alias path in storybook
       new TsconfigPathsPlugin({
