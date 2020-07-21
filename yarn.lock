@@ -2429,10 +2429,10 @@
   dependencies:
     csstype "^2.6.9"
 
-"@types/styled-system__css@^5.0.9":
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.9.tgz#7eeafd4fbcf7c8ee8f965d58ba4ac630319d9d89"
-  integrity sha512-WVEgF4B1knv4XQAQtqgmYnLeU3rwEFFEsHZE/oGUAsqzl/snq41Kwm5Fcto0+UVKDNSiL2HNPEUpHb2AKa4JgQ==
+"@types/styled-system__css@^5.0.12":
+  version "5.0.12"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.12.tgz#1de408f0db86b46018cf67bce2c50444237c523c"
+  integrity sha512-OgLd7p7z87K9oGoGrLpTbcGxlCHkLYVW7mrpzIHvcOZgFtE0WWogLfQmINtgWYvgScuYF1o2w6I/IhFtVlrGqQ==
   dependencies:
     csstype "^2.6.6"
 
