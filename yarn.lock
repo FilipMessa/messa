@@ -2429,12 +2429,12 @@
   dependencies:
     csstype "^2.6.9"
 
-"@types/styled-system__css@^5.0.9":
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.9.tgz#7eeafd4fbcf7c8ee8f965d58ba4ac630319d9d89"
-  integrity sha512-WVEgF4B1knv4XQAQtqgmYnLeU3rwEFFEsHZE/oGUAsqzl/snq41Kwm5Fcto0+UVKDNSiL2HNPEUpHb2AKa4JgQ==
+"@types/styled-system__css@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@types/styled-system__css/-/styled-system__css-5.0.13.tgz#37ccff101739ed4c67b2f13142f67fb656f5dd0f"
+  integrity sha512-weoDj0SVCGB8/BmFVbQKaOCygGoMWiPGt+CVtgWHC/pcWtiWioCplMxTpza2cpYQs/Cf72+A4mAY24a3RbXllQ==
   dependencies:
-    csstype "^2.6.6"
+    csstype "^3.0.2"
 
 "@types/tapable@*", "@types/tapable@^1.0.5":
   version "1.0.5"
@@ -4826,10 +4826,15 @@ cssstyle@^2.2.0:
   dependencies:
     cssom "~0.3.6"
 
-csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.6, csstype@^2.6.7, csstype@^2.6.9:
+csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.7, csstype@^2.6.9:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.10.tgz#e63af50e66d7c266edb6b32909cfd0aabe03928b"
   integrity sha512-D34BqZU4cIlMCY93rZHbrq9pjTAQJ3U8S8rfBqjwHxkGPThWFjzZDQpgMJY0QViLxth6ZKYiwFBo14RdN44U/w==
+
+csstype@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.2.tgz#ee5ff8f208c8cd613b389f7b222c9801ca62b3f7"
+  integrity sha512-ofovWglpqoqbfLNOTBNZLSbMuGrblAf1efvvArGKOZMBrIoJeu5UsAipQolkijtyQx5MtAzT/J9IHj/CEY1mJw==
 
 cyclist@^1.0.1:
   version "1.0.1"
