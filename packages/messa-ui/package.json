@@ -37,7 +37,7 @@
   "dependencies": {
     "@storybook/addon-info": "^5.3.18",
     "@styled-system/css": "^5.1.5",
-    "@types/styled-components": "^5.1.0",
+    "@types/styled-components": "^5.1.2",
     "react-docgen-typescript-loader": "^3.7.2",
     "styled-components": "^5.1.0",
     "styled-reset": "^4.1.4",
