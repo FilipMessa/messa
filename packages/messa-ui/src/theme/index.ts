@@ -32,13 +32,13 @@ export const basicTheme = {
       },
       sizes: {
         small: {
-          fontSize: 6,
+          fontSize: 5,
         },
         medium: {
-          fontSize: 7,
+          fontSize: 6,
         },
         large: {
-          fontSize: 8,
+          fontSize: 7,
         },
       },
     },

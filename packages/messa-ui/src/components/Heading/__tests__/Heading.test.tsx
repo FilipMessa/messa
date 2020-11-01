@@ -7,7 +7,7 @@ import { Heading } from '../Heading';
 describe('Heading component', () => {
   it('should render correctly', async () => {
     const text = 'I SEE DEAD CODE';
-    const { getByText, getByRole } = render(<Heading as="div">{text}</Heading>);
+    const { getByText, getByRole } = render(<Heading as="h1">{text}</Heading>);
 
     const element = getByText(text);
 

@@ -7,7 +7,7 @@ import { Typography } from '@components/base/Typography';
 type SizeType = 'small' | 'medium' | 'large';
 
 interface HeadingProps {
-  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div';
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span';
   children: React.ReactNode;
   size?: SizeType;
   color?: 'primary' | 'secondary' | 'default';
