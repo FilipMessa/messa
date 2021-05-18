@@ -5,7 +5,7 @@
   "author": "messa.filip@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
+    "@babel/core": "^7.14.3",
     "@sinonjs/fake-timers": "^6.0.1",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
